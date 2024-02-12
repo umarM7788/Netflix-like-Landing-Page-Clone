@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Protest+Strike&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.main-content{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.main-content h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #e50914;
+    font-weight: 600;
+    font-size: 10em;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+.main-content h1:hover{
+    color: white;
+}
+.break{
+    width: 100%;
+    height: 5px;
+    background-color: #232323;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Set left to 50% for center alignment */
+    transform: translateX(-50%); /* Translate the element back by 50% of its own width */
+    padding: 20px 8%;
+    display: flex; /* Use flexbox for better alignment control */
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    margin-left: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+li a:hover {
+    color: #e50914; /* Change color on hover */
+    
+}
+
+.middle{
+    width: 100%;
+    background-color: black;
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+}
+
+.middle-text {
+    font-size: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 150px;
+    font-family: "Protest Strike", sans-serif;
+    text-shadow: 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000;
+    font-weight: lighter;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.middle-text:hover {
+    color: #e50914;
+    animation: futuristicAnimation 0.5s ease infinite; /* Apply the animation on hover */
+}
+
+@keyframes futuristicAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* .middle-second{
+    width: 100%;
+    background-color: black;
+    height: 500px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.middle-second-text{
+    padding-right: 100px ;
+    color: white;
+    font-size: 30px;
+    /* margin-top: 200px; */
+    /* font-family: "Protest Strike", sans-serif;
+    text-shadow: 4px 4px 0 #000, -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000; 
+} */
+
+.middle-second {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+
+.middle-second-text {
+    flex: 1;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add suitable padding */
+}
+
+.middle-second-text h2 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 50px;
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease; /* Add transitions for scale, color, and letter-spacing changes */
+}
+
+.middle-second-text h2:hover {
+    transform: scale(1.1) ; /* Apply scale and rotation transformations on hover */
+    color: #e50914; /* Change color on hover */
+    letter-spacing: 15px; /* Add letter spacing on hover */
+}
+
+.middle-second-text p {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px; /* Adjust font size as needed */
+    text-align: center;
+    margin: 0; /* Remove default margins */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.middle-second-text p:hover {
+    color: #e50914; /* Change color on hover */
+}
+
+.middle-second-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add suitable padding */
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.middle-second-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.middle-third {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+.middle-third-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add suitable padding */
+}
+
+.middle-third-text h2 {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 50px;
+    color: #fff; /* Text color */
+    margin-bottom: 10px; /* Add suitable margin */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transitions for scale and opacity changes */
+}
+
+.middle-third-text p {
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20px; /* Adjust font size as needed */
+    text-align: center;
+    color: #fff; /* Text color */
+    margin: 0; /* Remove default margins */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add transitions for scale and opacity changes */
+}
+
+.middle-third-text:hover h2{
+    color: #e50914;
+    transform: scale(1.1); /* Apply scale transformation on hover */
+    opacity: 0.8; /* Adjust opacity on hover */
+}
+
+.middle-third-text:hover p {
+    color: #e50914;
+}
+
+
+.middle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30%;
+    
+}
+
+
+.fa-download {
+    font-size: 50px; /* Adjust icon size as needed */
+    color: #fff; /* Icon color */
+}
+
+.fa-download:hover{
+    color: #e50914;
+}
+
+
+.netflix-footer {
+    background-color: #111;
+    font-family:'Bebas Neue', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-columns {
+    display: flex;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column h3:hover{
+    color: #e50914;
+}
+
+.footer-left p:hover{
+    color: #e50914;
+    
+}
+
